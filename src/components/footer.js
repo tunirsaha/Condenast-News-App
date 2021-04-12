@@ -7,11 +7,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "0.8em",
         textAlign: "center",
         fontFamily: "Roboto",
-        padding: 20,
-        position: "fixed",
-        bottom: 0,
-        left: 0,
-        right: 0
+        padding: 20
     }
 }));
 

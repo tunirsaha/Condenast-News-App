@@ -33,9 +33,6 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     backgroundColor: red[500],
   },
-  header: {
-    fontSize: '0.5 em !important'
-  },
   date: {
     display: 'inline-block',
     paddingLeft: 15,
@@ -58,7 +55,6 @@ export default function NewsCard(props) {
         propData && propData.urlToImage && propData.description &&
         <Card className={classes.root}>
           <CardHeader
-            className={classes.header}
             title={propData.author}
             subheader={propData.source.name}
           />

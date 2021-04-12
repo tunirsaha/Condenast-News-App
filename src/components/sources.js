@@ -32,9 +32,6 @@ const useStyles = makeStyles((theme) => ({
     },
     avatar: {
         backgroundColor: red[500],
-    },
-    header: {
-        fontSize: '0.5 em !important'
     }
 }));
 
@@ -45,7 +42,6 @@ export default function Sources(props) {
     return (
         <Card className={classes.root}>
             <CardHeader
-                className={classes.header}
                 title={`${propData.name}`}
             />
             <CardContent>
