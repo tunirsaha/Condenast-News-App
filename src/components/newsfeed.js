@@ -15,7 +15,7 @@ export default function NewsFeed(props) {
             <Get url={urlMap[props.type]}>
                 {(error, response, isLoading, makeRequest) => {
                     if (error) {
-                        return (<div>Something bad happened: {error.message} <button onClick={() => makeRequest({})}>Retry</button></div>)
+                        return (<div>{error.message} <button onClick={() => makeRequest({})}>Retry</button></div>)
                     }
                     else if (isLoading) {
                         return (<Loader />)

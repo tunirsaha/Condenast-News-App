@@ -12,6 +12,16 @@ body, html {
     font-size: 0.7em !important
 }
 
-.MuiCardContent-root{
+.MuiCardContent-root {
     min-height: 100px;
+}
+
+button {
+    border: 1px solid #cacaca;
+    background: white;
+    padding: 10px;
+    border-radius: 10%;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    box-shadow: 4px 3px 5px -4px #000;
 }
