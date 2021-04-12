@@ -1,7 +1,8 @@
 body, html {
     width: 100%;
     height: 100%;
-    background-color: #efefef
+    background-color: #efefef;
+    font-family: 'Roboto' !important;
 }
 
 .MuiCardHeader-title {
@@ -24,4 +25,5 @@ button {
     font-family: 'Roboto';
     text-transform: uppercase;
     box-shadow: 4px 3px 5px -4px #000;
+    cursor: pointer;
 }

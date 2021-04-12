@@ -12,9 +12,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route exact path='/' component={TodaysHeadlines}></Route>
+        <Route exact path='/' exact component={TodaysHeadlines}></Route>
+        <Route exact path='/headlines' component={TodaysHeadlines}></Route>
         <Route exact path='/today' component={TodaysNews}></Route>
         <Route exact path='/sources' component={Sources}></Route>
+        <Route exact path='*' component={TodaysHeadlines}></Route>
       </Switch>
     </Router>
   </React.StrictMode>,

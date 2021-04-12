@@ -35,6 +35,12 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     fontSize: '0.5 em !important'
+  },
+  date: {
+    display: 'inline-block',
+    paddingLeft: 15,
+    paddingBottom: 10,
+    fontSize: 12
   }
 }));
 
@@ -53,9 +59,10 @@ export default function NewsCard(props) {
         <Card className={classes.root}>
           <CardHeader
             className={classes.header}
-            title={`${propData.author}, ${propData.source.name}`}
-            subheader={formatDate(propData && propData.publishedAt)}
+            title={propData.author}
+            subheader={propData.source.name}
           />
+          <span className={classes.date}>{formatDate(propData && propData.publishedAt)}</span>
           {
             propData && propData.urlToImage &&
             <CardMedia
