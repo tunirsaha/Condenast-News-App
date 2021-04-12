@@ -16,6 +16,6 @@ export default function Header() {
     const classes = useStyles();
 
     return (
-        <h1 className={classes.header}>News App</h1>
+        <h1 className={classes.header}>Britan Insights</h1>
     );
 }
