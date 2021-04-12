@@ -47,25 +47,30 @@ export default function NewsCard(props) {
   }
 
   return (
-    <Card className={classes.root}>
-      <CardHeader
-        className={classes.header}
-        title={`${propData.author}, ${propData.source.name}`}
-        subheader={formatDate(propData && propData.publishedAt)}
-      />
+    <>
       {
         propData && propData.urlToImage &&
-        <CardMedia
-          className={classes.media}
-          image={propData.urlToImage}
-          title="news image"
-        />
+        <Card className={classes.root}>
+          <CardHeader
+            className={classes.header}
+            title={`${propData.author}, ${propData.source.name}`}
+            subheader={formatDate(propData && propData.publishedAt)}
+          />
+          {
+            propData && propData.urlToImage &&
+            <CardMedia
+              className={classes.media}
+              image={propData.urlToImage}
+              title="news image"
+            />
+          }
+          <CardContent>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {propData.description}
+            </Typography>
+          </CardContent>
+        </Card>
       }
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {propData.description}
-        </Typography>
-      </CardContent>
-    </Card>
+    </>
   );
 }
