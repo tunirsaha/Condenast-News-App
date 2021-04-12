@@ -5,10 +5,7 @@ import './reset.css';
 import './index.css';
 import TodaysNews from './pages/todaysNews';
 import TodaysHeadlines from './pages/todaysHeadlines';
-import Business from './pages/business';
-import Entertainment from './pages/entertainment';
-import Technology from './pages/technology';
-import Sports from './pages/sports';
+import Sources from './pages/sources';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -17,11 +14,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path='/' component={TodaysHeadlines}></Route>
         <Route exact path='/today' component={TodaysNews}></Route>
-        <Route exact path='/headlines' component={TodaysHeadlines}></Route>
-        <Route exact path='/business' component={Business}></Route>
-        <Route exact path='/entertainment' component={Entertainment}></Route>
-        <Route exact path='/sports' component={Sports}></Route>
-        <Route exact path='/technology' component={Technology}></Route>
+        <Route exact path='/sources' component={Sources}></Route>
       </Switch>
     </Router>
   </React.StrictMode>,

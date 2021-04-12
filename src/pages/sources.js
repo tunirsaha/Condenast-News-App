@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function Business() {
+export default function Sources() {
 
     const classes = useStyles();
 
@@ -21,7 +21,7 @@ export default function Business() {
         <div className={classes.root}>
             <TopBar></TopBar>
             <Container>
-                <NewsFeed type={'business'}></NewsFeed>
+                <NewsFeed type={'category'}></NewsFeed>
             </Container>
             <Container>
                 <Footer></Footer>

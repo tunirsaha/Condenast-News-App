@@ -29,16 +29,7 @@ export default function MenuBar() {
                 <a href="./today">Today's News</a>
             </li>
             <li>
-                <a href="./business">Business Sources</a>
-            </li>
-            <li>
-                <a href="./entertainment">Entertainment Sources</a>
-            </li>
-            <li>
-                <a href="./sports">Sports Sources</a>
-            </li>
-            <li>
-                <a href="./technology">Technology Sources</a>
+                <a href="./sources">Sources</a>
             </li>
         </ul>
     );

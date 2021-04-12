@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function NewsCard(props) {
+export default function Sources(props) {
     const propData = props.data
     const classes = useStyles();
 

@@ -1,6 +1,7 @@
 import {
     makeStyles
 } from '@material-ui/core';
+import loader from '../assets/loader.gif'
 
 const useStyles = makeStyles((theme) => ({
     loader: {
@@ -9,12 +10,9 @@ const useStyles = makeStyles((theme) => ({
         width: '100px',
         height: '100px',
         position: 'fixed',
-        background: '#fff',
         display: 'flex',
         justifyContent: 'space-around',
-        alignItems: 'center',
-        borderRadius: '10%',
-        boxShadow: '1px 5px 5px 1px #000',
+        alignItems: 'center'
     }
 }));
 
@@ -24,7 +22,7 @@ export default function MenuBar() {
 
     return (
         <div className={classes.loader}>
-            Loading
+            <img style={{ width: '100%' }} src={loader} />
         </div>
     );
 }
