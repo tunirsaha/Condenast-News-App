@@ -11,3 +11,7 @@ body, html {
 .MuiCardHeader-subheader {
     font-size: 0.7em !important
 }
+
+.MuiCardContent-root{
+    min-height: 100px;
+}
