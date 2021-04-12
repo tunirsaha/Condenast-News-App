@@ -1,5 +1,5 @@
 # news-app-ui
-News App made in ReactJS for CodeNast Interview
+News App made in ReactJS
 
 # Getting Started with Create React App
 
