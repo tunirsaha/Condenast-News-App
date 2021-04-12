@@ -49,7 +49,7 @@ export default function NewsCard(props) {
   return (
     <>
       {
-        propData && propData.urlToImage &&
+        propData && propData.urlToImage && propData.description &&
         <Card className={classes.root}>
           <CardHeader
             className={classes.header}
