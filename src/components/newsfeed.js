@@ -1,5 +1,6 @@
 import { Get } from 'react-axios';
 import NewsCard from './newsCard';
+import Sources from './sources';
 import Loader from './loader';
 
 const url = 'http://localhost:3001'
