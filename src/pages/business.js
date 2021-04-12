@@ -2,7 +2,7 @@ import {
     Container,
     makeStyles
 } from '@material-ui/core';
-import Headline from '../components/newsfeed';
+import NewsFeed from '../components/newsfeed';
 import TopBar from '../components/topbar';
 import Footer from '../components/footer';
 
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function TodaysNews() {
+export default function Business() {
 
     const classes = useStyles();
 
@@ -21,7 +21,7 @@ export default function TodaysNews() {
         <div className={classes.root}>
             <TopBar></TopBar>
             <Container>
-                <Headline type={'all'}></Headline>
+                <NewsFeed type={'business'}></NewsFeed>
             </Container>
             <Container>
                 <Footer></Footer>

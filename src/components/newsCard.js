@@ -1,4 +1,3 @@
-import Avatar from '@material-ui/core/Avatar';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -42,24 +41,26 @@ const useStyles = makeStyles((theme) => ({
 export default function NewsCard(props) {
   const propData = props.data
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+  const formatDate = (dateStr) => {
+    console.log(dateStr)
+    return dateStr.split('T')[0]
+  }
 
   return (
     <Card className={classes.root}>
       <CardHeader
         className={classes.header}
         title={`${propData.author}, ${propData.source.name}`}
-        subheader={propData.publishedAt}
+        subheader={formatDate(propData && propData.publishedAt)}
       />
-      <CardMedia
-        className={classes.media}
-        image={propData.urlToImage}
-        title="Paella dish"
-      />
+      {
+        propData && propData.urlToImage &&
+        <CardMedia
+          className={classes.media}
+          image={propData.urlToImage}
+          title="news image"
+        />
+      }
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           {propData.description}

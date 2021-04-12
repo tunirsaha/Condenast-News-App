@@ -1,13 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './reset.css';
 import './index.css';
-import Home from './pages/home';
+import TodaysNews from './pages/todaysNews';
+import TodaysHeadlines from './pages/todaysHeadlines';
+import Business from './pages/business';
+import Entertainment from './pages/entertainment';
+import Technology from './pages/technology';
+import Sports from './pages/sports';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Router>
+      <Switch>
+        <Route exact path='/' component={TodaysHeadlines}></Route>
+        <Route exact path='/today' component={TodaysNews}></Route>
+        <Route exact path='/headlines' component={TodaysHeadlines}></Route>
+        <Route exact path='/business' component={Business}></Route>
+        <Route exact path='/entertainment' component={Entertainment}></Route>
+        <Route exact path='/sports' component={Sports}></Route>
+        <Route exact path='/technology' component={Technology}></Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

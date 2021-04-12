@@ -1,0 +1,13 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #efefef
+}
+
+.MuiCardHeader-title {
+    font-size: 1em !important
+}
+
+.MuiCardHeader-subheader {
+    font-size: 0.7em !important
+}
