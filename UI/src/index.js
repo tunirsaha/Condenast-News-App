@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './reset.css';
 import './index.css';
-import TodaysNews from './pages/todaysNews';
-import TodaysHeadlines from './pages/todaysHeadlines';
+// import TodaysNews from './pages/todaysNews';
+// import TodaysHeadlines from './pages/todaysHeadlines';
+import GenericPage from './pages/genericPage';
 import Sources from './pages/sources';
 import reportWebVitals from './reportWebVitals';
 
@@ -12,11 +13,19 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route exact path='/' exact component={TodaysHeadlines}></Route>
-        <Route exact path='/headlines' component={TodaysHeadlines}></Route>
-        <Route exact path='/today' component={TodaysNews}></Route>
+        <Route exact path='/' exact>
+          <GenericPage type={'headlines'} />
+        </Route>
+        <Route exact path='/headlines'>
+          <GenericPage type={'headlines'} />
+        </Route>
+        <Route exact path='/today'>
+          <GenericPage type={'all'} />
+        </Route>
         <Route exact path='/sources' component={Sources}></Route>
-        <Route exact path='*' component={TodaysHeadlines}></Route>
+        <Route exact path='*'>
+          <GenericPage type={'headlines'} />
+        </Route>
       </Switch>
     </Router>
   </React.StrictMode>,

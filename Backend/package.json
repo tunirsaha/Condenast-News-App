@@ -1,0 +1,35 @@
+{
+  "name": "news-app-backend",
+  "version": "1.0.0",
+  "description": "NodeJS Backend for the News-App-UI here: https://github.com/tunirsaha/News-App-UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "go": "cls && nodemon node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunirsaha/News-App-Backend.git"
+  },
+  "keywords": [
+    "news-app"
+  ],
+  "author": "Tunir Saha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tunirsaha/News-App-Backend/issues"
+  },
+  "homepage": "https://github.com/tunirsaha/News-App-Backend#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "^1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "newsapi": "^2.4.1",
+    "nodemon": "^2.0.7"
+  }
+}
